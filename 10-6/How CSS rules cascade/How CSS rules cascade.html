@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <title> How CSS Rules Cascade</title> 
+        <style type="text/css">
+            * {
+                font-family: Arial, Verdana, sans-serif;
+            }
+
+            h1 {
+                font-family: 'Courier New', Courier, monospace;
+                /* font chu cai */
+            }
+
+            i {
+                color: green;
+            }
+
+            b {
+                color: pink;
+                /* khong duoc uu tien */
+            }
+
+            p b {
+                color: blue !important; 
+                /* !important dung de danh dau muc do uu tien trong CSS */
+            }
+
+            p b {
+                color: violet;
+                /* khong duoc uu tien */
+            }
+
+            p#intro {
+                font-size: 100%;
+            }
+
+            p {
+                font-size: 75%;
+            }
+        </style>
+</head>
+
+<body>
+    <h1>Potatoes</h1>
+    <p id="intro">There are <i>dozens</i> of different <b>potato</b> varieties</p>
+    <p>They are usually described as early, second early and maincrop potatoes.</p>
+</body>
+
+</html>
